@@ -1,11 +1,26 @@
 body {
 
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(0, 255, 255, 0.315);
+    background-color: gray;
 }
 
 h1 {
     color: black;
     text-align: center;
     font-size: 50px;
+
+}
+h2 {
+
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+
+}
+
+p {
+
+    text-align: center;
 }
