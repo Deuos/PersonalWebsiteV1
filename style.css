@@ -15,6 +15,11 @@ h2 {
     text-align: center;
 }
 
+h2.Contact {
+
+    text-align: left;
+}
+
 h3 {
     text-align: center;
 
