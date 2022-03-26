@@ -1,106 +1,101 @@
-*{
-	font-family: 'Baloo Paaji 2', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*
+Colors
+black - #040404
+Aquua - #54df37
+sorta green - #16600d
+white - 
+ */
+
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+	
+}
+
+body {
+	
+	min-height: 100vh;
+	background-color: #040404;
+}
+.nagivation {
+
+	right: 0;
+	top: 0;
+	position: fixed;
+	width: 60px;
+	height: 100%;
+	background: white;
+	transition: 0.5s;
+	overflow: hidden;
+
+}
+
+.nagivation:hover {
+
+	width: 300px;
+
+}
+
+.nagivation ul {
+
+	position: absolute;
+	width: 100%;
+	
+}
+
+.nagivation ul li {
+
+	position: relative;
+	right: 0;
+	width: 100%;
 	list-style: none;
+	
+}
+
+.nagivation ul li:hover {
+
+	background-color: #54df37;
+
+}
+.nagivation ul li a {
+
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
 	text-decoration: none;
 }
 
-body{
-	background: #f5f5f5;
-}
+.nagivation ul li a .icons {
 
-.top_navbar{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 60px;
-	background: #323233;
-	box-shadow: 1px 0 2px rgba(0,0,0,0.125);
-	display: flex;
-	align-items: center;
-}
-
-.top_navbar .logo{
-	width: 250px;
-	font-size: 25px;
-	font-weight: 700;
-	padding: 0 25px;
-	color: white;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	border-right: 1px solid #f5f5f5;
-}
-
-
-
-.top_navbar .menu{
-	width: calc(100% - 250px);
-	padding: 0 25px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.top_navbar .hamburger{
-	font-size: 25px;
-	cursor: pointer;
-	color: white;
-}
-
-.top_navbar .hamburger:hover{
-	color: #007dc3;
-}
-
-/* Now I have determined what the sidebar will look like for a responsive device */
-.hover_collapse .sidebar{
-	width: 70px;
-}
-
-.hover_collapse .sidebar ul li a .text{
-	display: none;
-}
-
-.sidebar{
-	position: fixed;
-	top: 60px;
-	left: 0;
-	width: 220px;
-	height: 100%;
-	background: #042331;
-}
-
-.sidebar ul li a{
+	position: relative;
 	display: block;
-	padding: 16px 25px;
-	border-bottom: 1px solid #03374e;
-	color: #0e94d4;
-
-
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #040404;
 }
 
-.sidebar ul li a .icon{
-	font-size: 18px;
-  color: white;
-	vertical-align: middle;
+.nagivation ul li a .title {
 
+	position: relative;
+	display: block;
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	text-align: start;
+	white-space: nowrap;
+	color: #040404;
 }
 
-.sidebar ul li a .text{
-	margin-left: 19px;
-	color: #fff;
-  font-family: sans-serif;
-  font-size: 18px;
-	letter-spacing: 2px;
-}
+.home .home_header {
 
-.sidebar ul li a:hover{
-	background: #0e94d4;
-	color: #fff;
-}
-
-.click_collapse .sidebar{
-
+	color: #54df37;
+	
 }
