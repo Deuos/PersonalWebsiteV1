@@ -23,6 +23,10 @@ body {
 	background-color: #040404;
 }
 
+
+
+
+
 .nagivation {
 
 	right: 0;
@@ -99,39 +103,60 @@ body {
 	color: #040404;
 }
 
+
+
+
+
+/* .type is the bottom layer of the auto sentence */
 .type {
 
-	padding-top: 200px;
-	color: white;
+	margin-right: 60px;
+	border: 1px solid;
+	border-color: blue;
 
 }
 
+/* .type-out is the sentence itself which is inside the .container  */
 .type-out {
-	position: absolute;
-	top: 25px;
+
+	position: relative;
 	font-size: 25px;
-	width: 90%;
+	width: 100%;
 	text-align: center;
+
+	/* border: 1px solid;
+	border-color: orange; */
+
 }
 
 .type-out::after {
 
-	position: absolute;
+	display: flex;
+	justify-content: center;
+	position: relative;
 	content: "";
 	width: 100%;
-	height: 100%;
-	line-height: 25px;
 	animation: abomination1 5s linear 1;
-	left: 30px;
-	top: 50px;
+
 	animation-fill-mode: forwards;
+
+	/* border: 1px solid;
+	border-color: green; */
+
 }
 
+/* This is the same as the .type but it has the padding and is about .type-out */
 .container {
 
+	padding: 100px;
+
 	color: white;
-	display: inline-block;
-	position: center;
+	display: flex;
+	position: relative;
+
+	/* border: 1px solid;
+	border-color: red; */
+
 
 }
 
@@ -368,16 +393,13 @@ body {
 
 */
 
-.scroller {
+/* Home section of the thing*/
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.main_home {
 
-}
+	margin-right: 60px;
 
-.Home {
+	border: 1px solid;
+	border-color: red;
 
-	color: white;
-	padding-top: 400px;
 }
