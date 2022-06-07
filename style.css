@@ -9,6 +9,8 @@ white -
  */
 
 
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -19,12 +21,10 @@ white -
 
 body {
 
-	min-height: 100vh;
+	height: 100%;
+	/*this is for full layout for the type-out*/
 	background-color: #040404;
 }
-
-
-
 
 
 .nagivation {
@@ -40,6 +40,8 @@ body {
 	background: white;
 	transition: 0.5s;
 	overflow: hidden;
+	z-index: 1;
+	/*^^^ makes it above everthign */
 
 }
 
@@ -111,27 +113,37 @@ body {
 .type {
 
 	margin-right: 60px;
-	border: 1px solid;
-	border-color: blue;
+	margin-bottom: 50px;
+	/* border: 1px solid;
+	border-color: blue; */
+
+
+	height: 100vh;
+	background-size: cover;
 
 }
 
 /* .type-out is the sentence itself which is inside the .container  */
 .type-out {
 
-	position: relative;
-	font-size: 25px;
+	display: flex;
+
+	font-size: 30px;
 	width: 100%;
 	text-align: center;
 
-	/* border: 1px solid;
-	border-color: orange; */
+	border-radius: 50px;
+
+	border: 5px solid;
+	border-color: whitesmoke;
+
 
 }
 
 .type-out::after {
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	position: relative;
 	content: "";
@@ -140,24 +152,42 @@ body {
 
 	animation-fill-mode: forwards;
 
+
 	/* border: 1px solid;
 	border-color: green; */
+
 
 }
 
 /* This is the same as the .type but it has the padding and is about .type-out */
 .container {
 
-	padding: 100px;
+	padding: 15%;
 
-	color: white;
+	color: whitesmoke;
 	display: flex;
+
 	position: relative;
 
 	/* border: 1px solid;
 	border-color: red; */
+	height: 100vh;
+
+}
+
+.scroll_more {
+
+	position: relative;
+
+	display: flex;
+
+	width: 100%;
+	text-align: center;
+	bottom: 20px;
 
 
+	border: 1px solid;
+	border-color: green;
 }
 
 @keyframes abomination1 {
@@ -383,11 +413,12 @@ body {
 
 	100% {
 		content: "Hi, my name is Kush, and I am a college student.";
+
 	}
 
-
-
 }
+
+
 
 /* Hi my name is Kush, and I am a broke college student.
 
@@ -398,8 +429,9 @@ body {
 .main_home {
 
 	margin-right: 60px;
-
+	max-width: 600px;
 	border: 1px solid;
 	border-color: red;
+	color: white;
 
 }
