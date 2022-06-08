@@ -8,6 +8,11 @@ sorta green - #16600d
 white - 
  */
 
+
+html {
+	scroll-behavior: smooth;  
+ }
+
 * {
 	margin: 0;
 	padding: 0;
@@ -196,6 +201,15 @@ body {
 	font-size: 30px;
 	padding: 10px;
 
+}
+
+.overlay {
+
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	z-index: 2;
 }
 
 @keyframes showMee {
@@ -445,30 +459,28 @@ body {
 .main_home {
 
 	margin-top: 100px;
-	display: inline-flex;
+	display: flex;
 	position: relative;
+
 	margin-right: 60px;
+	margin: 0 auto;
 	max-width: 800px;
+	height: 1000px;
+
+
 	border: 1px solid;
 	border-color: red;
 	color: black;
-	left: 50%;
-	transform: translate(-50%, -50%);
+
+
+	/* left: 50%;
+	transform: translate(-50%, -50%); */
 }
 
-#home_text {
-
-	position: relative;
-	width: 150px;
-	height: 100px;
-	background-color: red;
-	top: 0px;
-	left: 0px;
-}
 
 #home_writing {
 	position: relative;
-	width: 150px;
+	width: 50%;
 	height: 100px;
 	background-color: orange;
 
