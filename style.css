@@ -20,7 +20,7 @@ body {
 
 	height: 100%;
 	/*this is for full layout for the type-out*/
-	background-color: #040404;
+	background-color: whitesmoke;
 }
 
 
@@ -34,7 +34,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: white;
+	background: whitesmoke;
 	transition: 0.5s;
 	overflow: hidden;
 	z-index: 1;
@@ -111,6 +111,7 @@ body {
 
 	margin-right: 60px;
 	margin-bottom: 50px;
+
 	/* border: 1px solid;
 	border-color: blue; */
 
@@ -131,8 +132,9 @@ body {
 
 	border-radius: 50px;
 
-	border: 5px solid;
-	border-color: whitesmoke;
+	/* border: 5px solid;
+	border-color: whitesmoke; */
+
 
 
 }
@@ -153,20 +155,23 @@ body {
 	/* border: 1px solid;
 	border-color: green; */
 
+	/*this where the text goes so the text inside the box itself*/
+
 
 }
 
 /* This is the same as the .type but it has the padding and is about .type-out */
 .container {
 
-	padding: 15%;
-
+	padding: 200px 100px 200px 100px;
 	color: whitesmoke;
-	display: flex;
-	position: relative;
+	display: grid;
+	grid-template-rows: 300px 100px;
 
 	/* border: 1px solid;
 	border-color: red; */
+
+	background-color: black;
 	height: 100vh;
 
 }
@@ -176,20 +181,14 @@ body {
 	animation: showMee 0s 6s forwards;
 	visibility: hidden;
 
-	position: absolute;
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-	justify-content: center;
-	bottom: 25px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
+	margin-top: 10%;
 	padding: 15px;
+	text-align: center;
 
-	border: 5px solid;
+
+	/* border: 5px solid;
 	border-color: whitesmoke;
-	border-radius: 15px;
+	border-radius: 15px; */
 }
 
 .scroll_icon {
@@ -201,8 +200,10 @@ body {
 
 @keyframes showMee {
 
-	to {visibility: visible;}
-	
+	to {
+		visibility: visible;
+	}
+
 }
 
 @keyframes abomination1 {
@@ -443,15 +444,33 @@ body {
 
 .main_home {
 
-	display: flex;
+	margin-top: 100px;
+	display: inline-flex;
 	position: relative;
-
 	margin-right: 60px;
 	max-width: 800px;
 	border: 1px solid;
 	border-color: red;
-	color: white;
+	color: black;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+#home_text {
+
+	position: relative;
+	width: 150px;
+	height: 100px;
+	background-color: red;
+	top: 0px;
+	left: 0px;
+}
+
+#home_writing {
+	position: relative;
+	width: 150px;
+	height: 100px;
+	background-color: orange;
+
 
 }
