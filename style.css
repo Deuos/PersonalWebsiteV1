@@ -25,7 +25,7 @@ body {
 
 	height: 100%;
 	/*this is for full layout for the type-out*/
-	background-color: whitesmoke;
+	background-color: black;
 }
 
 
@@ -49,7 +49,7 @@ body {
 
 .nagivation:hover {
 
-	width: 250px;
+	width: 200px;
 
 }
 
@@ -129,15 +129,14 @@ body {
 /* .type-out is the sentence itself which is inside the .container  */
 .type-out {
 
-	/* display: flex; */
+	display: flex;
 
-	/* font-size: 30px; */
-	/* width: 100%; */
-	/* text-align: center; */
+	position: relative;
 
-	/* border-radius: 50px;
+	width: 100%;
 
-	border: 5px solid;
+
+	/* border: 5px solid;
 	border-color: whitesmoke; */
 
 
@@ -446,18 +445,36 @@ body {
 
 /* Home section of the thing*/
 
+.homeTitle {
+
+	margin-top: 50px;
+	margin-bottom: 20px;
+	position: relative;
+
+	margin-right: 100px;
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 50px;
+
+	background-color: blue;
+	border: 1px solid;
+	border-color: red;
+	color: black;
+
+}
+
 .main_home {
 
-	margin-top: 100px;
+	margin-top: 150px;
 	display: flex;
 	position: relative;
 
-	margin-right: 60px;
+	margin-right: 100px;
 	margin: 0 auto;
-	max-width: 900px;
-	height: 1000px;
+	max-width: 1000px;
+	height: 600px;
 
-
+	background-color: white;
 	border: 1px solid;
 	border-color: red;
 	color: black;
@@ -467,42 +484,16 @@ body {
 	transform: translate(-50%, -50%); */
 }
 
+#home_title {
 
-/* #home_writing {
 	position: relative;
-	width: 50%;
-	height: 100px;
-	background-color: orange;
 
+	width: 240px;
+	height: 50px;
 
-} */
+	color: white;
+	z-index: 2;
 
-#home_work {
+	background-color: teal;
 
-	display: flex;
-	position: relative;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-
-
-	width: 50px;
-	height: 30%;
-
-
-
-	background-color: red;
-
-}
-
-#home_text {
-	display: flex;
-	position: relative;
-	writing-mode: vertical-rl;
-	transform: rotate(180deg);
-	font-size: 80px;
-	text-orientation: sideways-right;
-	text-align: center;
-
-	background-color: blue;
 }
