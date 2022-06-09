@@ -201,27 +201,6 @@ body {
 	border-radius: 15px; */
 }
 
-.scroll_icon {
-
-	font-size: 30px;
-	padding: 10px;
-
-}
-
-.overlay {
-
-	position: fixed;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100px;
-	height: 100px;
-	background-color: red;
-	z-index: 999;
-
-}
 
 @keyframes showMee {
 
@@ -475,7 +454,7 @@ body {
 
 	margin-right: 60px;
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 900px;
 	height: 1000px;
 
 
@@ -489,11 +468,41 @@ body {
 }
 
 
-#home_writing {
+/* #home_writing {
 	position: relative;
 	width: 50%;
 	height: 100px;
 	background-color: orange;
 
 
+} */
+
+#home_work {
+
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+
+
+	width: 50px;
+	height: 30%;
+
+
+
+	background-color: red;
+
+}
+
+#home_text {
+	display: flex;
+	position: relative;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	font-size: 80px;
+	text-orientation: sideways-right;
+	text-align: center;
+
+	background-color: blue;
 }
