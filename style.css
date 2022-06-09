@@ -10,8 +10,8 @@ white -
 
 
 html {
-	scroll-behavior: smooth;  
- }
+	scroll-behavior: smooth;
+}
 
 * {
 	margin: 0;
@@ -129,15 +129,15 @@ body {
 /* .type-out is the sentence itself which is inside the .container  */
 .type-out {
 
-	display: flex;
+	/* display: flex; */
 
-	font-size: 30px;
-	width: 100%;
-	text-align: center;
+	/* font-size: 30px; */
+	/* width: 100%; */
+	/* text-align: center; */
 
-	border-radius: 50px;
+	/* border-radius: 50px;
 
-	/* border: 5px solid;
+	border: 5px solid;
 	border-color: whitesmoke; */
 
 
@@ -149,9 +149,15 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
+	width: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+
 	position: relative;
 	content: "";
-	width: 100%;
 	animation: abomination1 5s linear 1;
 
 	animation-fill-mode: forwards;
@@ -178,7 +184,6 @@ body {
 
 	background-color: black;
 	height: 100vh;
-
 }
 
 .scroll_more {
@@ -205,11 +210,17 @@ body {
 
 .overlay {
 
-	position: absolute;
+	position: fixed;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100px;
 	height: 100px;
 	background-color: red;
-	z-index: 2;
+	z-index: 999;
+
 }
 
 @keyframes showMee {
