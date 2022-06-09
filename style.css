@@ -485,17 +485,18 @@ body {
 	justify-content: center;
 	text-align: center;
 
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
 
-	width: 50px;
-	height: 30%;
-
-
+	margin-top: 200px;
 
 	background-color: red;
 
 }
 
 #home_text {
+
 	display: flex;
 	position: relative;
 	writing-mode: vertical-rl;
