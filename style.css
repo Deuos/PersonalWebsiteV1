@@ -452,8 +452,6 @@ body {
 /*Parent of Title[0]*/
 .homeTitle {
 
-	margin-top: 200px;
-	margin-bottom: 20px;
 	position: relative;
 
 	margin-right: 100px;
@@ -469,7 +467,6 @@ body {
 
 .main_home {
 
-	margin-top: 150px;
 	display: flex;
 	position: relative;
 
@@ -508,7 +505,7 @@ body {
 
 	content: '';
 	border-top: 2px solid;
-	margin: 0 200px 0 100px;
+	margin: 0 300px 0 100px;
 	flex: 1 0 20px;
 
 	color: whitesmoke;
@@ -630,7 +627,7 @@ body {
 
 	content: '';
 	border-top: 2px solid;
-	margin: 0 200px 0 100px;
+	margin: 0 300px 0 127px;
 	flex: 1 0 20px;
 
 	color: whitesmoke;
@@ -683,6 +680,29 @@ body {
 
 }
 
+#box1_title {
+
+	position: relative;
+	display: flex;
+	top: 50%;
+	transform: translateY(-50%);
+
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 40px;
+
+	width: 200px;
+	height: 120px;
+
+	font-size: 25px;
+	color: whitesmoke;
+
+	border-radius: 40px;
+	background-color: teal;
+}
+
 #box2 {
 
 	position: relative;
@@ -690,8 +710,7 @@ body {
 	width: 700px;
 	height: 200px;
 	color: black;
-	text-align: center;
-	align-items: center;
+	
 
 
 
@@ -726,12 +745,14 @@ body {
 #box4 {
 
 	position: relative;
+	display: flex;
 
 	width: 190px;
 	height: 70px;
 	color: black;
 	text-align: center;
 	align-items: center;
+	justify-content: center;
 
 
 
@@ -744,23 +765,34 @@ body {
 	margin-top: 50px;
 }
 
+#box4:hover {
+
+	transition-duration: .4s;
+	background-color: teal;
+}
+
 #box5 {
 
 	position: relative;
-
+	display: flex;
 	width: 100px;
-	height: 60px;
+	height: 70px;
 	color: black;
-	text-align: center;
-	align-items: center;
-
-
 
 	/* padding-left: 50px;
 	padding-right: 50px; */
+	align-items: center;
+	justify-content: center;
 
 	border-radius: 60px;
 	background-color: whitesmoke;
 	margin: 0 auto;
 	margin-top: 50px;
+
+	
+}
+
+#box5:hover {
+	transition-duration: .4s;
+	background-color: teal;
 }
