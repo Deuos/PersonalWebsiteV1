@@ -703,6 +703,27 @@ body {
 	background-color: teal;
 }
 
+#box1_para {
+
+	display: flex;
+	font-size: 18px;
+
+	width: 400px;
+	height: 150px;
+
+	margin-left: 250px;
+
+	transform: translateY(-50%);
+	
+
+
+
+	color: black;
+	text-align: center;
+
+	
+}
+
 #box2 {
 
 	position: relative;
@@ -721,6 +742,7 @@ body {
 	background-color: whitesmoke;
 	margin: 50px 0px 0px 150px;
 }
+
 
 #box3 {
 
