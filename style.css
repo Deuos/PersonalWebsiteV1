@@ -644,7 +644,7 @@ body {
 	margin-right: 100px;
 	margin: 0 auto;
 	max-width: 1000px;
-	height: 1500px;
+	height: 1000px;
 
 	border-style: dashed;
 	border-color: red;
@@ -714,14 +714,14 @@ body {
 	margin-left: 250px;
 
 	transform: translateY(-50%);
-	
+
 
 
 
 	color: black;
 	text-align: center;
 
-	
+
 }
 
 #box2 {
@@ -731,7 +731,7 @@ body {
 	width: 700px;
 	height: 200px;
 	color: black;
-	
+
 
 
 
@@ -811,10 +811,113 @@ body {
 	margin: 0 auto;
 	margin-top: 50px;
 
-	
+
 }
 
 #box5:hover {
 	transition-duration: .4s;
 	background-color: teal;
+}
+
+
+
+
+/*This is for the skills part of the webpage*/
+
+.skillsTitle {
+
+	overflow: auto;
+	margin: 0 auto;
+	max-width: 1100px;
+	height: 50px;
+	margin-top: 500px;
+
+	border: 1px solid;
+	border-color: red;
+	color: black;
+
+}
+
+#skills_title {
+
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: teal;
+
+	font-size: 40px;
+}
+
+#skills_title::after {
+
+	content: '';
+	border-top: 2px solid;
+	margin: 0 300px 0 127px;
+	flex: 1 0 20px;
+
+	color: whitesmoke;
+
+}
+
+/*Skills Title^^*/
+
+/*Page Content Title^^*/
+
+.main_skills {
+
+	margin-top: 150px;
+	position: relative;
+
+	margin-right: 100px;
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 1000px;
+
+	border-style: dashed;
+	border-color: red;
+
+	overflow: auto;
+
+}
+
+.skills_para {
+
+	position: relative;
+	display: flex;
+
+	background-color: whitesmoke;
+
+	border-radius: 60px;
+
+	margin: 0 auto;
+	margin-top: 50px;
+
+	width: 700px;
+	height: 850px;
+}
+
+#skills_topleft {
+
+	display: flex;
+
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	border-radius: 60px;
+
+	font-size: 22px;
+	top: 0px;
+
+	width: 350px;
+	height: 350px;
+
+
+}
+
+#list {
+
+	list-style: none;
+	margin: 17px 0;
 }
