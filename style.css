@@ -618,7 +618,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	color: teal;
+	color: #008080;
 
 	font-size: 40px;
 }
@@ -670,14 +670,29 @@ body {
 	align-items: center;
 
 
-
-	/* padding-left: 50px;
-	padding-right: 50px; */
-
 	border-radius: 60px;
 	background-color: whitesmoke;
 	margin: 50px 0px 0px 150px;
 
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+
+
+#box1:hover #box1_title,
+#box1:hover #box1_para {
+
+	visibility: hidden;
+}
+
+#box1:hover {
+
+	box-shadow: inset 700px 0 0 0 #005f5f;
+
+}
+
+#display {
+	display: none;
 }
 
 #box1_title {
@@ -701,21 +716,24 @@ body {
 
 	border-radius: 40px;
 	background-color: teal;
+
+
 }
 
 #box1_para {
 
+	position: relative;
 	display: flex;
 	font-size: 18px;
 
 	width: 400px;
 	height: 150px;
+	transform: translateY(-65%);
 
 	margin-left: 250px;
 
-	transform: translateY(-50%);
-
-
+	justify-content: center;
+	align-items: center;
 
 
 	color: black;
