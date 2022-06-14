@@ -687,13 +687,10 @@ body {
 
 #box1:hover {
 
+
 	box-shadow: inset 700px 0 0 0 #005f5f;
-
 }
 
-#display {
-	display: none;
-}
 
 #box1_title {
 
