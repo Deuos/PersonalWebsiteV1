@@ -87,7 +87,7 @@ body {
 .nagivation ul li a .icons {
 
 	position: relative;
-	font-size: 20px;
+	font-size: 23px;
 	display: block;
 	min-width: 60px;
 	height: 30%;
@@ -95,6 +95,7 @@ body {
 	text-align: center;
 	color: #040404;
 }
+
 
 .nagivation ul li a .title {
 
@@ -928,6 +929,43 @@ body {
 	width: 350px;
 	height: 350px;
 
+	border-style: dashed;
+
+
+}
+
+#skills_topright {
+
+	position: relative;
+
+
+	border-radius: 60px;
+
+	width: 350px;
+	height: 350px;
+
+	border-style: dashed;
+}
+
+
+.progressbar {
+
+	position: relative;
+	display: flex;
+	background-color: antiquewhite;
+	border-radius: 13px;
+
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 25px;
+	margin-right: 25px;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	width: 300px;
+	height: 20px;
 
 }
 
