@@ -1044,10 +1044,25 @@ body {
 
 	border-radius: 60px;
 
+	border-style: dashed;
+	border-color: red;
+
 	margin: 0 auto;
 	margin-top: 50px;
 
 	width: 700px;
 	height: 170px;
 
+
+
 }
+
+.child {
+
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+
+}
+
+/*https://enjeck.com/btns/ for button hover*/
