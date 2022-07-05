@@ -904,13 +904,16 @@ body {
 	display: flex;
 
 	background-color: whitesmoke;
+	border-bottom: 9px solid teal;
 
-	border-radius: 60px;
+	border-top-right-radius: 60px;
+	border-top-left-radius: 60px;
 	margin: 0 auto;
 	margin-top: 50px;
 
+
 	width: 700px;
-	height: 850px;
+	height: 350px;
 }
 
 #skills_topleft {
@@ -928,9 +931,21 @@ body {
 	width: 350px;
 	height: 350px;
 
-	border-style: dashed;
+}
+
+.skills_bottom {
+
+	position: relative;
+	display: flex;
+
+	background-color: whitesmoke;
+	border-bottom-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	margin: 0 auto;
 
 
+	width: 700px;
+	height: 500px;
 }
 
 #skills_topright {
@@ -947,7 +962,6 @@ body {
 	width: 350px;
 	height: 350px;
 
-	border-style: dashed;
 }
 
 #skills_toprightinside {
@@ -982,6 +996,8 @@ body {
 	border-radius: 13px;
 	width: 50%;
 	background-color: teal;
+	color: teal;
+
 }
 
 .progressbarfillJavascript {
@@ -989,6 +1005,8 @@ body {
 	border-radius: 13px;
 	width: 75%;
 	background-color: teal;
+	color: teal;
+
 }
 
 .progressbarfillassembly {
@@ -996,6 +1014,8 @@ body {
 	border-radius: 13px;
 	width: 40%;
 	background-color: teal;
+	color: teal;
+
 }
 
 .progressbarfillhtml {
@@ -1003,6 +1023,7 @@ body {
 	border-radius: 13px;
 	width: 90%;
 	background-color: teal;
+	color: teal;
 }
 
 .progressbarfillcss {
@@ -1010,6 +1031,7 @@ body {
 	border-radius: 13px;
 	width: 90%;
 	background-color: teal;
+	color: teal;
 }
 
 #list {
@@ -1017,6 +1039,39 @@ body {
 	list-style: none;
 	margin: 17px 0;
 }
+
+.skills_iconsleft {
+
+	display: flex;
+
+	text-align: right;
+	align-items: center;
+	justify-content: center;
+	border-radius: 60px;
+
+	font-size: 22px;
+	top: 0px;
+	border: dashed;
+	width: 350px;
+	height: 500px;
+}
+
+.skills_iconsright {
+
+	display: flex;
+
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	border-radius: 60px;
+
+	top: 0px;
+	border: dashed;
+	width: 350px;
+	height: 500px;
+}
+
+
 
 /*Contact Title*/
 
