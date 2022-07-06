@@ -891,8 +891,8 @@ body {
 	max-width: 1000px;
 	height: 1000px;
 
-	border-style: dashed;
-	border-color: red;
+	/* border-style: dashed;
+	border-color: red; */
 
 	overflow: auto;
 
@@ -1051,9 +1051,8 @@ body {
 
 	font-size: 22px;
 	top: 0px;
-	border: dashed;
 	width: 350px;
-	height: 500px;
+	height: 450px;
 }
 
 .skills_iconsright {
@@ -1066,12 +1065,38 @@ body {
 	border-radius: 60px;
 
 	top: 0px;
-	border: dashed;
 	width: 350px;
-	height: 500px;
+	height: 450px;
 }
 
+.skills_iconsleft,
+.skills_iconsright {
 
+	display: inline-grid;
+
+}
+
+.skills_iconsinside {
+
+	position: relative;
+	display: flex;
+	font-size: 20px;
+	text-align: center;
+	justify-content: left;
+	align-items: center;
+
+}
+
+.skills_iconsinside2 {
+
+	position: relative;
+	display: flex;
+	font-size: 20px;
+	text-align: center;
+	justify-content: right;
+	align-items: center;
+
+}
 
 /*Contact Title*/
 
