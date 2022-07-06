@@ -848,8 +848,8 @@ body {
 	height: 50px;
 	margin-top: 500px;
 
-	border: 1px solid;
-	border-color: red;
+	/* border: 1px solid;
+	border-color: red; */
 	color: black;
 
 }
@@ -1108,8 +1108,8 @@ body {
 	height: 50px;
 	margin-top: 500px;
 
-	border: 1px solid;
-	border-color: red;
+	/* border: 1px solid;
+	border-color: red; */
 	color: black;
 
 }
@@ -1149,10 +1149,10 @@ body {
 	margin-right: 100px;
 	margin: 0 auto;
 	max-width: 1000px;
-	height: 600px;
+	height: 900px;
 
-	border-style: dashed;
-	border-color: red;
+	/* border-style: dashed;
+	border-color: red; */
 
 	overflow: auto;
 
@@ -1167,15 +1167,18 @@ body {
 
 	border-radius: 60px;
 
-	border-style: dashed;
-	border-color: red;
+	/* border-style: dashed;
+	border-color: red; */
 
 	margin: 0 auto;
 	margin-top: 50px;
 
 	width: 700px;
-	height: 170px;
+	height: 150px;
 
+	justify-content: center;
+	text-align: center;
+	align-items: center;
 
 }
 
@@ -1183,8 +1186,70 @@ body {
 
 	margin: 0 auto;
 	display: flex;
-	align-items: center;
+	border: solid;
+	border-radius: 35px;
 
+	justify-content: center;
+	align-items: center;
+}
+
+#gmail {
+	width: 110px;
+	height: 90px;
+}
+
+#gmail:hover {
+
+	background-color: teal;
+	transition: .3s;
+
+}
+
+#resume {
+
+	width: 160px;
+	height: 90px;
+
+	font-size: 22px;
+}
+
+#resume:hover {
+
+	background-color: teal;
+	transition: .3s;
+}
+
+#github {
+
+	width: 110px;
+	height: 90px;
+}
+
+#github:hover {
+
+	background-color: teal;
+	transition: .3s;
+}
+
+.locationimage {
+
+	margin: 0 auto;
+	margin-top: 20px;
+
+	width: 550px;
+	height: 400px;
+	background-color: teal;
+	border-radius: 60px;
+
+
+}
+
+.locationimageinside {
+
+	height: 400px;
+	width: 550px;
+	border-radius: 60px;
+	opacity: .7;
 }
 
 /*https://enjeck.com/btns/ for button hover*/
