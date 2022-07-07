@@ -590,7 +590,7 @@ body {
 
 	transition: .3s;
 	border: solid teal;
-	border-width: 5px;
+	border-width: 7px;
 }
 
 /*Projects sidee*/
@@ -1280,9 +1280,40 @@ body {
 	max-width: 1000px;
 	height: 900px;
 
-	border-style: dashed;
-	border-color: red;
+	/* border-style: dashed;
+	border-color: red; */
 
-	overflow: auto;
+	margin-bottom: 300px;
+}
 
+.playlistcontent {
+
+	position: relative;
+	display: flex;
+
+	background-color: whitesmoke;
+
+	border-radius: 60px;
+
+	/* border-style: dashed;
+	border-color: red; */
+
+	margin: 0 auto;
+	margin-top: 50px;
+
+	width: 700px;
+	height: 800px;
+
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+}
+
+#spotify {
+
+	width: 600px;
+	height: 700px;
+
+	border-radius: 60px;
 }
