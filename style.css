@@ -435,7 +435,7 @@ body {
 	}
 
 	100% {
-		content: "Hi, my name is Kush, and I am a college student.";
+		content: "Hi, my name is Kush, and I am a college student,";
 
 	}
 
@@ -569,10 +569,6 @@ body {
 	transition-duration: .4s;
 }
 
-#home_button:hover {
-
-	background-color: teal;
-}
 
 #home_button2 {
 
@@ -589,9 +585,11 @@ body {
 	transition-duration: .4s;
 }
 
-#home_button2:hover {
+#home_button:hover, #home_button2:hover {
 
-	background-color: teal;
+	transition: .3s;
+	border: solid teal;
+	border-width: 5px;
 }
 
 /*Projects sidee*/
@@ -606,8 +604,8 @@ body {
 	height: 50px;
 	margin-top: 500px;
 
-	border: 1px solid;
-	border-color: red;
+	/* border: 1px solid;
+	border-color: red; */
 	color: black;
 
 }
@@ -647,8 +645,8 @@ body {
 	max-width: 1000px;
 	height: 1000px;
 
-	border-style: dashed;
-	border-color: red;
+	/* border-style: dashed;
+	border-color: red; */
 
 	overflow: auto;
 
@@ -675,21 +673,14 @@ body {
 	background-color: whitesmoke;
 	margin: 50px 0px 0px 150px;
 
-	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-
 }
 
 
-#box1:hover #box1_title,
-#box1:hover #box1_para {
+#box1:hover, #box2:hover, #box3:hover{
 
-	visibility: hidden;
-}
-
-#box1:hover {
-
-
-	box-shadow: inset 700px 0 0 0 #005f5f;
+	transition: .4s;
+	border: solid teal;
+	border-width: 10px;
 }
 
 
@@ -773,43 +764,15 @@ body {
 
 
 	/* padding-left: 50px;
-	padding-right: 50px; */
+	/* padding-right: 50px; */
 
 	border-radius: 60px;
 	background-color: whitesmoke;
 	margin: 50px 0px 0px 150px;
 }
 
+
 #box4 {
-
-	position: relative;
-	display: flex;
-
-	width: 190px;
-	height: 70px;
-	color: black;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-
-
-
-	/* padding-left: 50px;
-	padding-right: 50px; */
-
-	border-radius: 60px;
-	background-color: whitesmoke;
-	margin: 0 auto;
-	margin-top: 50px;
-}
-
-#box4:hover {
-
-	transition-duration: .4s;
-	background-color: teal;
-}
-
-#box5 {
 
 	position: relative;
 	display: flex;
@@ -830,7 +793,7 @@ body {
 
 }
 
-#box5:hover {
+#box4:hover {
 	transition-duration: .4s;
 	background-color: teal;
 }
@@ -1234,7 +1197,7 @@ body {
 .locationimage {
 
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 50px;
 
 	width: 550px;
 	height: 400px;
