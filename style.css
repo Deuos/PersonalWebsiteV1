@@ -451,27 +451,25 @@ body {
 
 /*The side line*/
 
-@media (min-width: 720px) {
+
+
+.line_leftside {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 100px; /*min, val,max*/
+	border-left: 2px solid whitesmoke;
+	height: 5200px;
+	z-index: 40;
+}
+
+@media (max-width: 1280px) {
+	
 	.line_leftside {
-		position: absolute;
-		margin-top: 20px;
+
 		margin-left: 20px;
-		border-left: 2px solid whitesmoke;
-		height: 5200px;
-		z-index: 40;
 	}
 }
 
-@media (min-width: 1700px) {
-	.line_leftside {
-		position: absolute;
-		margin-top: 20px;
-		margin-left: 20px;
-		border-left: 2px solid whitesmoke;
-		height: 5200px;
-		z-index: 40;
-	}
-}
 
 
 
