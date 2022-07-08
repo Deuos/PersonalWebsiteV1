@@ -470,6 +470,48 @@ body {
 	}
 }
 
+.hide {
+	display: none;
+
+}
+
+#hiddencircle1 {
+	position: absolute;
+
+	width: 250px;
+	height: 100px;
+	left: 20px;
+	top: -40px;
+	border-radius: 20px;
+
+	background-color: whitesmoke;
+
+}
+
+.circle {
+
+	position: absolute;
+
+	width: 20px;
+	height: 20px;
+
+	top: 200px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: whitesmoke;
+
+	
+}
+
+.circle:hover .hide {
+	display: block;
+
+}
+.circle:hover {
+
+	border-radius: 0px;
+}
+
 
 
 
