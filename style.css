@@ -474,9 +474,6 @@ body {
 .hide {
 	display: none;
 
-}
-
-#hiddencircle1 {
 	position: absolute;
 
 	width: 250px;
@@ -489,19 +486,32 @@ body {
 
 }
 
+
 .circle {
 
 	position: absolute;
-
 	width: 20px;
 	height: 20px;
 
-	top: 200px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	background-color: whitesmoke;
 
+	align-items: center;
+  	display: flex;
+  	justify-content: center;
 
+}
+
+#circle1 {
+
+	top: 150px;
+
+}
+
+#circle2 {
+
+	top: 1300px;
 }
 
 .circle:hover .hide {
