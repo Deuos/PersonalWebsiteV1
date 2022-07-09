@@ -484,8 +484,9 @@ body {
 
 	background-color: whitesmoke;
 
-}
 
+
+}
 
 .circle {
 
@@ -497,9 +498,6 @@ body {
 	border-bottom-right-radius: 20px;
 	background-color: whitesmoke;
 
-	align-items: center;
-  	display: flex;
-  	justify-content: center;
 
 }
 
@@ -511,13 +509,16 @@ body {
 
 #circle2 {
 
-	top: 1300px;
+	top: 1400px;
 }
 
 .circle:hover .hide {
 
-	display: block;
+	display: flex;
 
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .circle:hover {
