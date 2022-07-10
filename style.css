@@ -204,7 +204,6 @@ body {
 	border-radius: 15px; */
 }
 
-
 @keyframes showMee {
 
 	to {
@@ -472,10 +471,11 @@ body {
 }
 
 .hide {
-	display: none;
-
 	position: absolute;
+	display: flex;
 
+	opacity: 0;
+	visibility: hidden;
 	width: 250px;
 	height: 100px;
 	left: 20px;
@@ -509,26 +509,37 @@ body {
 
 #circle2 {
 
-	top: 1400px;
+	top: 450px;
+}
+
+#circle3 {
+
+	top: 1450px;
+}
+
+#circle4 {
+
+	top: 1700px;
 }
 
 .circle:hover .hide {
 
 	display: flex;
-
+	opacity: 100%;
+	visibility: visible;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
+
+	transition: .4s;
 }
+
 
 .circle:hover {
 	transition: .2s;
 	border-radius: 0px;
 
 }
-
-
-
 
 /*Parent of Title[0]*/
 .homeTitle {
@@ -749,7 +760,7 @@ body {
 	text-align: center;
 	align-items: center;
 
-
+	border: solid teal;
 	border-radius: 60px;
 	background-color: whitesmoke;
 	margin: 50px 0px 0px 150px;
@@ -824,7 +835,7 @@ body {
 
 
 
-
+	border: solid teal;
 	/* padding-left: 50px;
 	padding-right: 50px; */
 
@@ -845,6 +856,7 @@ body {
 	align-items: center;
 
 
+	border: solid teal;
 
 	/* padding-left: 50px;
 	/* padding-right: 50px; */
