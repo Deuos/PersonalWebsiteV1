@@ -503,13 +503,13 @@ body {
 
 #circle1 {
 
-	top: 150px;
+	top: 200px;
 
 }
 
 #circle2 {
 
-	top: 450px;
+	top: 500px;
 }
 
 #circle3 {
@@ -520,6 +520,16 @@ body {
 #circle4 {
 
 	top: 1700px;
+}
+
+#circle5 {
+
+	top: 2900px;
+}
+
+#circle6 {
+
+	top: 3500px;
 }
 
 .circle:hover .hide {
