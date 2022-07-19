@@ -32,6 +32,7 @@ body {
     display: none;
 }
 
+
 .line_leftside {
 
     display: none;
@@ -63,7 +64,7 @@ ul {
 
 nav {
     height: 65px;
-    z-index: 20;    
+    z-index: 20;
 
 }
 
@@ -155,26 +156,26 @@ nav {
 /* .type is the bottom layer of the auto sentence */
 .type {
 
-	/* border: 1px solid;
+    /* border: 1px solid;
 	border-color: blue; */
 
 
-	height: 100vh;
-	background-size: cover;
+    height: 100vh;
+    background-size: cover;
 
 }
 
 /* .type-out is the sentence itself which is inside the .container  */
 .type-out {
 
-	display: flex;
+    display: flex;
 
-	position: relative;
+    position: relative;
 
-	width: 100%;
+    width: 100%;
 
 
-	/* border: 5px solid;
+    /* border: 5px solid;
 	border-color: whitesmoke; */
 
 
@@ -183,26 +184,26 @@ nav {
 
 .type-out::after {
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 5vw;
-	position: relative;
-	content: "";
-	animation: abomination1 5s linear 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    position: relative;
+    content: "";
+    animation: abomination1 5s linear 1;
 
-	animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 
 
-	/* border: 1px solid;
+    /* border: 1px solid;
 	border-color: green; */
 
-	/*this where the text goes so the text inside the box itself*/
+    /*this where the text goes so the text inside the box itself*/
 
 
 }
@@ -211,265 +212,265 @@ nav {
 /* This is the same as the .type but it has the padding and is about .type-out */
 .container {
 
-	padding: 20% 10px 20% 10px;
-	color: whitesmoke;
-	display: grid;
-	grid-template-rows: 300px 100px;
+    padding: 20% 10px 20% 10px;
+    color: whitesmoke;
+    display: grid;
+    grid-template-rows: 300px 100px;
 
-	/* border: 1px solid;
+    /* border: 1px solid;
 	border-color: red; */
 
-	background-color: black;
-	height: 100vh;
+    background-color: black;
+    height: 100vh;
 }
 
 .scroll_more {
 
-	animation: showMee 0s 6s forwards;
-	visibility: hidden;
+    animation: showMee 0s 6s forwards;
+    visibility: hidden;
 
-	margin-top: 10%;
-	padding: 15px;
-	text-align: center;
-	font-size: 3vw;
+    margin-top: 10%;
+    padding: 15px;
+    text-align: center;
+    font-size: 3vw;
 
-	/* border: 5px solid;
+    /* border: 5px solid;
 	border-color: whitesmoke;
 	border-radius: 15px; */
 }
 
 @keyframes showMee {
 
-	to {
-		visibility: visible;
-	}
+    to {
+        visibility: visible;
+    }
 
 }
 
 @keyframes abomination1 {
-	1% {
-		content: "H";
-	}
+    1% {
+        content: "H";
+    }
 
-	3% {
-		content: "Hi";
-	}
+    3% {
+        content: "Hi";
+    }
 
-	5% {
-		content: "Hi, ";
-	}
+    5% {
+        content: "Hi, ";
+    }
 
-	7% {
-		content: "Hi, m";
-	}
+    7% {
+        content: "Hi, m";
+    }
 
-	9% {
-		content: "Hi, my";
-	}
+    9% {
+        content: "Hi, my";
+    }
 
-	11% {
-		content: "Hi, my";
-	}
+    11% {
+        content: "Hi, my";
+    }
 
-	13% {
-		content: "Hi, my n";
-	}
+    13% {
+        content: "Hi, my n";
+    }
 
-	15% {
-		content: "Hi, my na";
-	}
+    15% {
+        content: "Hi, my na";
+    }
 
-	17% {
-		content: "Hi, my nam";
-	}
+    17% {
+        content: "Hi, my nam";
+    }
 
-	19% {
-		content: "Hi, my name";
-	}
+    19% {
+        content: "Hi, my name";
+    }
 
-	21% {
-		content: "Hi, my namee";
-	}
+    21% {
+        content: "Hi, my namee";
+    }
 
-	23% {
-		content: "Hi, my name";
-	}
+    23% {
+        content: "Hi, my name";
+    }
 
-	25% {
-		content: "Hi, my name ";
-	}
+    25% {
+        content: "Hi, my name ";
+    }
 
-	27% {
-		content: "Hi, my name i";
-	}
+    27% {
+        content: "Hi, my name i";
+    }
 
-	29% {
-		content: "Hi, my name is";
-	}
+    29% {
+        content: "Hi, my name is";
+    }
 
-	31% {
-		content: "Hi, my name is ";
-	}
+    31% {
+        content: "Hi, my name is ";
+    }
 
-	33% {
-		content: "Hi, my name is K";
-	}
+    33% {
+        content: "Hi, my name is K";
+    }
 
-	35% {
-		content: "Hi, my name is Ku";
-	}
+    35% {
+        content: "Hi, my name is Ku";
+    }
 
-	37% {
-		content: "Hi, my name is Kus";
-	}
+    37% {
+        content: "Hi, my name is Kus";
+    }
 
-	39% {
-		content: "Hi, my name is Kush";
-	}
+    39% {
+        content: "Hi, my name is Kush";
+    }
 
-	41% {
-		content: "Hi, my name is Kush,";
-	}
+    41% {
+        content: "Hi, my name is Kush,";
+    }
 
-	43% {
-		content: "Hi, my name is Kush, ";
-	}
+    43% {
+        content: "Hi, my name is Kush, ";
+    }
 
-	45% {
-		content: "Hi, my name is Kush, a";
-	}
+    45% {
+        content: "Hi, my name is Kush, a";
+    }
 
-	47% {
-		content: "Hi, my name is Kush, an";
-	}
+    47% {
+        content: "Hi, my name is Kush, an";
+    }
 
-	49% {
-		content: "Hi, my name is Kush, and";
-	}
+    49% {
+        content: "Hi, my name is Kush, and";
+    }
 
-	51% {
-		content: "Hi, my name is Kush, and ";
-	}
+    51% {
+        content: "Hi, my name is Kush, and ";
+    }
 
-	53% {
-		content: "Hi, my name is Kush, and I";
-	}
+    53% {
+        content: "Hi, my name is Kush, and I";
+    }
 
-	55% {
-		content: "Hi, my name is Kush, and I ";
-	}
+    55% {
+        content: "Hi, my name is Kush, and I ";
+    }
 
-	57% {
-		content: "Hi, my name is Kush, and I a";
-	}
+    57% {
+        content: "Hi, my name is Kush, and I a";
+    }
 
-	59% {
-		content: "Hi, my name is Kush, and I am";
-	}
+    59% {
+        content: "Hi, my name is Kush, and I am";
+    }
 
-	61% {
-		content: "Hi, my name is Kush, and I am ";
-	}
+    61% {
+        content: "Hi, my name is Kush, and I am ";
+    }
 
-	63% {
-		content: "Hi, my name is Kush, and I am a";
-	}
+    63% {
+        content: "Hi, my name is Kush, and I am a";
+    }
 
-	65% {
-		content: "Hi, my name is Kush, and I am a ";
-	}
+    65% {
+        content: "Hi, my name is Kush, and I am a ";
+    }
 
-	67% {
-		content: "Hi, my name is Kush, and I am a b";
-	}
+    67% {
+        content: "Hi, my name is Kush, and I am a b";
+    }
 
-	69% {
-		content: "Hi, my name is Kush, and I am a br";
-	}
+    69% {
+        content: "Hi, my name is Kush, and I am a br";
+    }
 
-	71% {
-		content: "Hi, my name is Kush, and I am a bro";
-	}
+    71% {
+        content: "Hi, my name is Kush, and I am a bro";
+    }
 
-	73% {
-		content: "Hi, my name is Kush, and I am a brok";
-	}
+    73% {
+        content: "Hi, my name is Kush, and I am a brok";
+    }
 
-	76% {
-		content: "Hi, my name is Kush, and I am a broke";
-	}
+    76% {
+        content: "Hi, my name is Kush, and I am a broke";
+    }
 
-	78% {
-		content: "Hi, my name is Kush, and I am a brok";
-	}
+    78% {
+        content: "Hi, my name is Kush, and I am a brok";
+    }
 
-	80% {
-		content: "Hi, my name is Kush, and I am a bro";
-	}
+    80% {
+        content: "Hi, my name is Kush, and I am a bro";
+    }
 
-	82% {
-		content: "Hi, my name is Kush, and I am a br";
-	}
+    82% {
+        content: "Hi, my name is Kush, and I am a br";
+    }
 
-	84% {
-		content: "Hi, my name is Kush, and I am a b";
-	}
+    84% {
+        content: "Hi, my name is Kush, and I am a b";
+    }
 
-	85% {
-		content: "Hi, my name is Kush, and I am a ";
-	}
+    85% {
+        content: "Hi, my name is Kush, and I am a ";
+    }
 
-	87% {
-		content: "Hi, my name is Kush, and I am a c";
-	}
+    87% {
+        content: "Hi, my name is Kush, and I am a c";
+    }
 
-	89% {
-		content: "Hi, my name is Kush, and I am a co";
-	}
+    89% {
+        content: "Hi, my name is Kush, and I am a co";
+    }
 
-	90% {
-		content: "Hi, my name is Kush, and I am a coll";
-	}
+    90% {
+        content: "Hi, my name is Kush, and I am a coll";
+    }
 
-	91% {
-		content: "Hi, my name is Kush, and I am a colle";
-	}
+    91% {
+        content: "Hi, my name is Kush, and I am a colle";
+    }
 
-	92% {
-		content: "Hi, my name is Kush, and I am a colleg";
-	}
+    92% {
+        content: "Hi, my name is Kush, and I am a colleg";
+    }
 
-	93% {
-		content: "Hi, my name is Kush, and I am a college";
-	}
+    93% {
+        content: "Hi, my name is Kush, and I am a college";
+    }
 
-	94% {
-		content: "Hi, my name is Kush, and I am a college ";
-	}
+    94% {
+        content: "Hi, my name is Kush, and I am a college ";
+    }
 
-	95% {
-		content: "Hi, my name is Kush, and I am a college s";
-	}
+    95% {
+        content: "Hi, my name is Kush, and I am a college s";
+    }
 
-	96% {
-		content: "Hi, my name is Kush, and I am a college st";
-	}
+    96% {
+        content: "Hi, my name is Kush, and I am a college st";
+    }
 
-	97% {
-		content: "Hi, my name is Kush, and I am a college stud";
-	}
+    97% {
+        content: "Hi, my name is Kush, and I am a college stud";
+    }
 
-	98% {
-		content: "Hi, my name is Kush, and I am a college stude";
-	}
+    98% {
+        content: "Hi, my name is Kush, and I am a college stude";
+    }
 
-	99% {
-		content: "Hi, my name is Kush, and I am a college studen";
-	}
+    99% {
+        content: "Hi, my name is Kush, and I am a college studen";
+    }
 
-	100% {
-		content: "Hi, my name is Kush, and I am a college student,";
+    100% {
+        content: "Hi, my name is Kush, and I am a college student,";
 
-	}
+    }
 
 }
