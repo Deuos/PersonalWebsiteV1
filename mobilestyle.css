@@ -568,23 +568,11 @@ nav {
     background-color: whitesmoke;
 }
 
-#home_movie {
-
-    position: absolute;
-    display: flex;
-    bottom: 0px;
-    left: 5%;
-
-
-
-}
-
+#home_movie,
 #home_music {
 
-    position: absolute;
     display: flex;
-    right: 5%;
-    bottom: 0px;
+    margin: 0 auto;
 }
 
 #home_button {
@@ -597,8 +585,6 @@ nav {
     background-color: whitesmoke;
     font-size: 22px;
 
-
-    transition-duration: .4s;
 }
 
 
@@ -612,8 +598,6 @@ nav {
     background-color: whitesmoke;
     font-size: 22px;
 
-
-    transition-duration: .4s;
 }
 
 
