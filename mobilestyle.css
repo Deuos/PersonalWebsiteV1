@@ -486,9 +486,9 @@ nav {
     max-width: 1100px;
     height: 50px;
 
-    border: 1px solid;
+    /* border: 1px solid;
     border-color: red;
-    color: black;
+    color: black; */
 
 }
 
@@ -507,8 +507,8 @@ nav {
 
     overflow: auto;
 
-    border: 1px solid;
-    border-color: red;
+    /* border: 1px solid;
+    border-color: red; */
 
 
 
@@ -583,7 +583,7 @@ nav {
 }
 
 #home_button {
-
+    text-decoration: none;
     width: 200px;
     height: 40px;
     border-style: solid;
@@ -601,6 +601,7 @@ nav {
 
 #home_button2 {
     transform: translateX(42%);
+    text-decoration: none;
 
     width: 200px;
     height: 40px;
@@ -616,3 +617,213 @@ nav {
 
 
 /*Projects sidee*/
+
+/*title*/
+
+.projectTitle {
+
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 50px;
+    margin-top: 500px;
+
+    /* border: 1px solid;
+	border-color: red; */
+    color: black;
+
+}
+
+#project_title {
+
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: teal;
+
+    font-size: 20px;
+}
+
+#project_title::after {
+
+    content: '';
+    border-top: 2px solid;
+    margin: 0 5% 0 5%;
+    flex: 1 0 2%;
+
+    color: whitesmoke;
+
+}
+
+/*Content so this is the childrens*/
+
+.main_project {
+
+    margin-top: 150px;
+    position: relative;
+
+    margin-right: 15%;
+    margin-left: 15%;
+    margin: 0 auto;
+    max-width: 90%;
+    height: 1000px;
+
+    border-style: dashed;
+    border-color: red;
+
+    overflow: auto;
+
+}
+
+.childrens {
+
+    font-size: 16px;
+    display: block;
+}
+
+#box1 {
+
+    position: relative;
+
+    width: 90%;
+    height: 150px;
+    color: black;
+    text-align: center;
+    align-items: center;
+
+    border: solid teal;
+    border-radius: 40px;
+    background-color: whitesmoke;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+}
+
+#box1_title {
+
+    position: relative;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 5%;
+
+    width: 55%;
+    height: 70%;
+
+    font-size: 23px;
+    color: whitesmoke;
+
+    border-radius: 30px;
+    background-color: teal;
+
+
+}
+
+#box1_para {
+
+    position: relative;
+    display: flex;
+    font-size: 12px;
+
+    width: 30%;
+    height: 40px;
+    transform: translateY(-65%);
+
+    margin-left: 63%;
+
+    justify-content: center;
+    align-items: center;
+
+
+    color: black;
+    text-align: center;
+
+
+}
+
+#box2 {
+
+    position: relative;
+
+    width: 90%;
+    height: 150px;
+    color: black;
+
+
+
+    border: solid teal;
+    /* padding-left: 50px;
+	padding-right: 50px; */
+
+    border-radius: 40px;
+    background-color: whitesmoke;
+
+    margin-top: 10%;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+
+#box3 {
+
+    position: relative;
+
+    width: 90%;
+    height: 150px;
+    color: black;
+    text-align: center;
+    align-items: center;
+
+
+    border: solid teal;
+
+    /* padding-left: 50px;
+	/* padding-right: 50px; */
+
+    border-radius: 40px;
+    background-color: whitesmoke;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+
+#box4 {
+
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 70px;
+    color: black;
+
+    /* padding-left: 50px;
+	padding-right: 50px; */
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 60px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 50px;
+
+
+}
+
+#box4:hover {
+    transition-duration: .4s;
+    background-color: teal;
+}
+
+/*End project*/
