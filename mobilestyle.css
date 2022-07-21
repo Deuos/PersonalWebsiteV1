@@ -671,8 +671,8 @@ nav {
     max-width: 90%;
     height: 1000px;
 
-    border-style: dashed;
-    border-color: red;
+    /* border-style: dashed;
+    border-color: red; */
 
     overflow: auto;
 
@@ -682,6 +682,7 @@ nav {
 
     font-size: 16px;
     display: block;
+
 }
 
 #box1 {
@@ -720,12 +721,11 @@ nav {
     width: 55%;
     height: 70%;
 
-    font-size: 23px;
+    font-size: 24px;
     color: whitesmoke;
 
     border-radius: 30px;
     background-color: teal;
-
 
 }
 
@@ -733,22 +733,26 @@ nav {
 
     position: relative;
     display: flex;
-    font-size: 12px;
+    font-size: 15px;
+    left: 0%;
 
-    width: 30%;
-    height: 40px;
-    transform: translateY(-65%);
 
     margin-left: 63%;
 
-    justify-content: center;
-    align-items: center;
+    width: 35%;
+    height: 50%;
 
-
-    color: black;
+    transform: translateY(-90%);
     text-align: center;
+    /* border: dashed red; */
+    /* margin-left: 63%; */
 
+    overflow: auto;
+    color: black;
 
+    white-space: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #box2 {
