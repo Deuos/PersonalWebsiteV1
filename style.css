@@ -1148,6 +1148,13 @@ body {
 
 }
 
+.skillsimages {
+
+	height: 100px;
+	width: 100px;
+
+}
+
 .skills_iconsinside {
 
 	position: relative;
