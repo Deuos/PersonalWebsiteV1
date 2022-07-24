@@ -136,7 +136,7 @@ nav {
     position: absolute;
     width: 180px;
     height: 400px;
-    box-shadow: 0 0 10px teal;
+    box-shadow: 0 0 10px gray;
     margin: -50px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
