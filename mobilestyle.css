@@ -502,7 +502,10 @@ nav {
     margin-left: 15%;
     margin: 0 auto;
     max-width: 90%;
-    height: 700px;
+    height: 650px;
+
+    /* border-style: dashed;
+    border-color: red; */
 
     overflow: auto;
 
@@ -557,6 +560,7 @@ nav {
 
     width: 90%;
     height: 450px;
+
 
     color: black;
     text-align: center;
@@ -626,7 +630,7 @@ nav {
     margin: 0 auto;
     max-width: 1100px;
     height: 50px;
-    margin-top: 300px;
+    margin-top: 450px;
 
     /* border: 1px solid;
 	border-color: red; */
@@ -669,7 +673,7 @@ nav {
     margin-left: 15%;
     margin: 0 auto;
     max-width: 90%;
-    height: 1000px;
+    height: 500px;
 
     /* border-style: dashed;
     border-color: red; */
@@ -688,9 +692,8 @@ nav {
 #box1 {
 
     position: relative;
-
     width: 90%;
-    height: 150px;
+    height: 90px;
     color: black;
     text-align: center;
     align-items: center;
@@ -709,50 +712,29 @@ nav {
 
     position: relative;
     display: flex;
-    top: 50%;
-    transform: translateY(-50%);
-
-    text-align: center;
     justify-content: center;
     align-items: center;
 
-    margin-left: 5%;
 
-    width: 55%;
-    height: 70%;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
 
-    font-size: 24px;
+
+    width: 90%;
+    height: 80%;
+
+    font-size: 19px;
     color: whitesmoke;
 
-    border-radius: 30px;
+    border-radius: 45px;
     background-color: teal;
 
 }
 
 #box1_para {
 
-    position: relative;
-    display: flex;
-    font-size: 15px;
-    left: 0%;
-
-
-    margin-left: 63%;
-
-    width: 35%;
-    height: 50%;
-
-    transform: translateY(-90%);
-    text-align: center;
-    /* border: dashed red; */
-    /* margin-left: 63%; */
-
-    overflow: auto;
-    color: black;
-
-    white-space: hidden;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
 }
 
 #box2 {
@@ -760,7 +742,7 @@ nav {
     position: relative;
 
     width: 90%;
-    height: 150px;
+    height: 90px;
     color: black;
 
 
@@ -784,7 +766,7 @@ nav {
     position: relative;
 
     width: 90%;
-    height: 150px;
+    height: 90px;
     color: black;
     text-align: center;
     align-items: center;
@@ -839,7 +821,7 @@ nav {
     margin: 0 auto;
     max-width: 1100px;
     height: 50px;
-    margin-top: 300px;
+    margin-top: 450px;
 
     /* border: 1px solid;
 	border-color: red; */
@@ -886,7 +868,10 @@ nav {
     margin-left: 15%;
     margin: 0 auto;
     max-width: 90%;
-    height: 1000px;
+    height: 800px;
+
+    /* border-style: dashed;
+    border-color: red; */
 
     /* border-style: dashed;
 	border-color: red; */
@@ -1114,7 +1099,7 @@ nav {
     margin: 0 auto;
     max-width: 1100px;
     height: 50px;
-    margin-top: 300px;
+    margin-top: 450px;
 
     /* border: 1px solid;
 	border-color: red; */
@@ -1185,7 +1170,7 @@ nav {
     margin-top: 50px;
 
     width: 90%;
-    height: 100px;
+    height: 90px;
 
     justify-content: center;
     text-align: center;
@@ -1214,8 +1199,8 @@ nav {
 }
 
 #gmail {
-    width: 25%;
-    height: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 #resume {
@@ -1228,8 +1213,8 @@ nav {
 
 #github {
 
-    width: 25%;
-    height: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .locationimage {
