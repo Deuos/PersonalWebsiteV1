@@ -555,8 +555,8 @@ nav {
     position: relative;
     display: flex;
 
-    width: 70%;
-    height: 500px;
+    width: 90%;
+    height: 450px;
 
     color: black;
     text-align: center;
@@ -568,8 +568,9 @@ nav {
     margin-bottom: 0;
     margin-left: auto;
 
-    padding: 9%;
-    border-radius: 50px;
+
+    padding: 10%;
+    border-radius: 50px;   
     background-color: whitesmoke;
 }
 
