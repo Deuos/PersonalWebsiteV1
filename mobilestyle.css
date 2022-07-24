@@ -587,6 +587,8 @@ nav {
 }
 
 #home_button {
+
+    display: flex;
     text-decoration: none;
     width: 200px;
     height: 40px;
@@ -598,13 +600,17 @@ nav {
     background-color: whitesmoke;
     font-size: 14px;
 
-    transform: translateX(42%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
+    margin: 0 auto;
 }
 
 
 #home_button2 {
-    transform: translateX(42%);
+    display: flex;
+
     text-decoration: none;
 
     width: 200px;
@@ -616,6 +622,12 @@ nav {
     color: black;
     background-color: whitesmoke;
     font-size: 14px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
 
 }
 
