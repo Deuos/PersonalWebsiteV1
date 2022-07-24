@@ -1,0 +1,1268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/*
+Colors
+black - #040404
+Aquua - #54df37
+sorta green - #16600d
+white - 
+ */
+
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+
+
+}
+
+.nagivation {
+
+    display: none;
+}
+
+
+.line_leftside {
+
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: 200ms;
+}
+
+a:hover {
+    opacity: 0.5;
+    color: teal;
+}
+
+.title {
+
+    color: black;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+nav {
+    height: 65px;
+    z-index: 20;
+
+
+}
+
+
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+#menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+#menuToggle span {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: whitesmoke;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 180px;
+    height: 400px;
+    box-shadow: 0 0 10px gray;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: whitesmoke;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    transition-delay: 2s;
+}
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+
+/* .type is the bottom layer of the auto sentence */
+.type {
+
+    /* border: 1px solid;
+	border-color: blue; */
+
+
+    height: 100vh;
+    background-size: cover;
+
+}
+
+/* .type-out is the sentence itself which is inside the .container  */
+.type-out {
+
+    display: flex;
+
+    position: relative;
+
+    width: 100%;
+
+
+    /* border: 5px solid;
+	border-color: whitesmoke; */
+
+
+
+}
+
+.type-out::after {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    position: relative;
+    content: "";
+    animation: abomination1 5s linear 1;
+
+    animation-fill-mode: forwards;
+
+
+    /* border: 1px solid;
+	border-color: green; */
+
+    /*this where the text goes so the text inside the box itself*/
+
+
+}
+
+/* top | right | bottom | left */
+/* This is the same as the .type but it has the padding and is about .type-out */
+.container {
+
+    padding: 20% 10px 20% 10px;
+    color: whitesmoke;
+    display: grid;
+    grid-template-rows: 300px 100px;
+
+    /* border: 1px solid;
+	border-color: red; */
+
+    background-color: black;
+    height: 100vh;
+}
+
+.scroll_more {
+
+    animation: showMee 0s 6s forwards;
+    visibility: hidden;
+
+    margin-top: 10%;
+    padding: 15px;
+    text-align: center;
+    font-size: 3vw;
+
+    /* border: 5px solid;
+	border-color: whitesmoke;
+	border-radius: 15px; */
+}
+
+@keyframes showMee {
+
+    to {
+        visibility: visible;
+    }
+
+}
+
+@keyframes abomination1 {
+    1% {
+        content: "H";
+    }
+
+    3% {
+        content: "Hi";
+    }
+
+    5% {
+        content: "Hi, ";
+    }
+
+    7% {
+        content: "Hi, m";
+    }
+
+    9% {
+        content: "Hi, my";
+    }
+
+    11% {
+        content: "Hi, my";
+    }
+
+    13% {
+        content: "Hi, my n";
+    }
+
+    15% {
+        content: "Hi, my na";
+    }
+
+    17% {
+        content: "Hi, my nam";
+    }
+
+    19% {
+        content: "Hi, my name";
+    }
+
+    21% {
+        content: "Hi, my namee";
+    }
+
+    23% {
+        content: "Hi, my name";
+    }
+
+    25% {
+        content: "Hi, my name ";
+    }
+
+    27% {
+        content: "Hi, my name i";
+    }
+
+    29% {
+        content: "Hi, my name is";
+    }
+
+    31% {
+        content: "Hi, my name is ";
+    }
+
+    33% {
+        content: "Hi, my name is K";
+    }
+
+    35% {
+        content: "Hi, my name is Ku";
+    }
+
+    37% {
+        content: "Hi, my name is Kus";
+    }
+
+    39% {
+        content: "Hi, my name is Kush";
+    }
+
+    41% {
+        content: "Hi, my name is Kush,";
+    }
+
+    43% {
+        content: "Hi, my name is Kush, ";
+    }
+
+    45% {
+        content: "Hi, my name is Kush, a";
+    }
+
+    47% {
+        content: "Hi, my name is Kush, an";
+    }
+
+    49% {
+        content: "Hi, my name is Kush, and";
+    }
+
+    51% {
+        content: "Hi, my name is Kush, and ";
+    }
+
+    53% {
+        content: "Hi, my name is Kush, and I";
+    }
+
+    55% {
+        content: "Hi, my name is Kush, and I ";
+    }
+
+    57% {
+        content: "Hi, my name is Kush, and I a";
+    }
+
+    59% {
+        content: "Hi, my name is Kush, and I am";
+    }
+
+    61% {
+        content: "Hi, my name is Kush, and I am ";
+    }
+
+    63% {
+        content: "Hi, my name is Kush, and I am a";
+    }
+
+    65% {
+        content: "Hi, my name is Kush, and I am a ";
+    }
+
+    67% {
+        content: "Hi, my name is Kush, and I am a b";
+    }
+
+    69% {
+        content: "Hi, my name is Kush, and I am a br";
+    }
+
+    71% {
+        content: "Hi, my name is Kush, and I am a bro";
+    }
+
+    73% {
+        content: "Hi, my name is Kush, and I am a brok";
+    }
+
+    76% {
+        content: "Hi, my name is Kush, and I am a broke";
+    }
+
+    78% {
+        content: "Hi, my name is Kush, and I am a brok";
+    }
+
+    80% {
+        content: "Hi, my name is Kush, and I am a bro";
+    }
+
+    82% {
+        content: "Hi, my name is Kush, and I am a br";
+    }
+
+    84% {
+        content: "Hi, my name is Kush, and I am a b";
+    }
+
+    85% {
+        content: "Hi, my name is Kush, and I am a ";
+    }
+
+    87% {
+        content: "Hi, my name is Kush, and I am a c";
+    }
+
+    89% {
+        content: "Hi, my name is Kush, and I am a co";
+    }
+
+    90% {
+        content: "Hi, my name is Kush, and I am a coll";
+    }
+
+    91% {
+        content: "Hi, my name is Kush, and I am a colle";
+    }
+
+    92% {
+        content: "Hi, my name is Kush, and I am a colleg";
+    }
+
+    93% {
+        content: "Hi, my name is Kush, and I am a college";
+    }
+
+    94% {
+        content: "Hi, my name is Kush, and I am a college ";
+    }
+
+    95% {
+        content: "Hi, my name is Kush, and I am a college s";
+    }
+
+    96% {
+        content: "Hi, my name is Kush, and I am a college st";
+    }
+
+    97% {
+        content: "Hi, my name is Kush, and I am a college stud";
+    }
+
+    98% {
+        content: "Hi, my name is Kush, and I am a college stude";
+    }
+
+    99% {
+        content: "Hi, my name is Kush, and I am a college studen";
+    }
+
+    100% {
+        content: "Hi, my name is Kush, and I am a college student,";
+
+    }
+
+}
+
+
+.homeTitle {
+
+    position: relative;
+    margin-right: 100px;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 50px;
+
+    /* border: 1px solid;
+    border-color: red;
+    color: black; */
+
+}
+
+/* top | right | bottom | left */
+
+.main_home {
+
+    display: block;
+    position: relative;
+
+    margin-right: 15%;
+    margin-left: 15%;
+    margin: 0 auto;
+    max-width: 90%;
+    height: 800px;
+
+    /* border-style: dashed;
+    border-color: red; */
+
+    overflow: auto;
+
+    /* border: 1px solid;
+    border-color: red; */
+
+
+
+    /* left: 50%;
+	transform: translate(-50%, -50%); */
+}
+
+/*Children of title[0]*/
+
+#home_title {
+
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: teal;
+
+    font-size: 30px;
+
+
+}
+
+/* top | right | bottom | left */
+
+#home_title::after {
+
+    content: '';
+    border-top: 2px solid;
+    margin: 0 5% 0 5%;
+    flex: 1 0 2%;
+
+    color: whitesmoke;
+
+}
+
+/*Content*/
+/* top | right | bottom | left */
+
+#home_main {
+
+    font-size: 18px;
+
+    position: relative;
+    display: flex;
+
+    width: 65%;
+    height: 450px;
+
+
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+
+    padding: 10%;
+    border-radius: 50px;
+    background-color: whitesmoke;
+}
+
+#home_movie,
+#home_music {
+
+    position: relative;
+    margin-top: 5%;
+
+}
+
+#home_button {
+
+    display: flex;
+    text-decoration: none;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    border-color: teal;
+    color: black;
+    border-radius: 60px;
+
+    background-color: whitesmoke;
+    font-size: 16px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+
+#home_button2 {
+    display: flex;
+
+    text-decoration: none;
+
+    width: 300px;
+    height: 40px;
+    border-radius: 60px;
+
+    border-color: teal;
+    border-style: solid;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 16px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+}
+
+
+/*Projects sidee*/
+
+/*title*/
+
+.projectTitle {
+
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 50px;
+    margin-top: 500px;
+
+    /* border: 1px solid;
+	border-color: red; */
+    color: black;
+
+}
+
+#project_title {
+
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: teal;
+
+    font-size: 30px;
+}
+
+#project_title::after {
+
+    content: '';
+    border-top: 2px solid;
+    margin: 0 5% 0 5%;
+    flex: 1 0 2%;
+
+    color: whitesmoke;
+
+}
+
+/*Content so this is the childrens*/
+
+.main_project {
+
+    margin-top: 150px;
+    position: relative;
+
+    margin-right: 15%;
+    margin-left: 15%;
+    margin: 0 auto;
+    max-width: 65%;
+    height: 700px;
+
+    /* border-style: dashed;
+    border-color: red; */
+
+    overflow: auto;
+
+}
+
+.childrens {
+
+    font-size: 16px;
+    display: block;
+
+}
+
+#box1 {
+
+    position: relative;
+    width: 90%;
+    height: 90px;
+    color: black;
+    text-align: center;
+    align-items: center;
+
+    border: solid teal;
+    border-radius: 40px;
+    background-color: whitesmoke;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+}
+
+#box1_title {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    width: 90%;
+    height: 80%;
+
+    font-size: 24px;
+    color: whitesmoke;
+
+    border-radius: 45px;
+    background-color: teal;
+
+}
+
+#box1_para {
+
+    display: none;
+}
+
+#box2 {
+
+    position: relative;
+
+    width: 90%;
+    height: 90px;
+    color: black;
+
+
+
+    border: solid teal;
+    /* padding-left: 50px;
+	padding-right: 50px; */
+
+    border-radius: 40px;
+    background-color: whitesmoke;
+
+    margin-top: 10%;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+
+#box3 {
+
+    position: relative;
+
+    width: 90%;
+    height: 90px;
+    color: black;
+    text-align: center;
+    align-items: center;
+
+
+    border: solid teal;
+
+    /* padding-left: 50px;
+	/* padding-right: 50px; */
+
+    border-radius: 40px;
+    background-color: whitesmoke;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+
+#box4 {
+
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 70px;
+    color: black;
+
+    /* padding-left: 50px;
+	padding-right: 50px; */
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 60px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 50px;
+
+
+}
+
+#box4:hover {
+    transition-duration: .4s;
+    background-color: teal;
+}
+
+/*End project*/
+/*This is for the skills part of the webpage*/
+
+.skillsTitle {
+
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 50px;
+    margin-top: 500px;
+
+    /* border: 1px solid;
+	border-color: red; */
+    color: black;
+
+}
+
+#skills_title {
+
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: teal;
+
+    font-size: 30px;
+}
+
+#skills_title::after {
+
+    content: '';
+    border-top: 2px solid;
+    margin: 0 5% 0 5%;
+    flex: 1 0 2%;
+
+
+    color: whitesmoke;
+
+}
+
+/*Skills Title^^*/
+
+/*Page Content Title^^*/
+
+.main_skills {
+
+    margin-top: 150px;
+    position: relative;
+
+    margin-right: 15%;
+    margin-left: 15%;
+    margin: 0 auto;
+    max-width: 65%;
+    height: 800px;
+
+    /* border-style: dashed;
+    border-color: red; */
+
+    /* border-style: dashed;
+	border-color: red; */
+
+    overflow: auto;
+
+}
+
+.skills_para {
+
+    position: relative;
+    display: flex;
+
+    background-color: whitesmoke;
+    border-bottom: 9px solid teal;
+
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+
+    width: 90%;
+    height: 250px;
+}
+
+#skills_topleft {
+
+    display: flex;
+
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+
+    font-size: 18px;
+    top: 0px;
+
+
+    width: 55%;
+    height: 100%;
+
+}
+
+.skills_bottom {
+
+    position: relative;
+    display: flex;
+
+    background-color: whitesmoke;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    margin: 0 auto;
+
+
+    width: 90%;
+    height: 400px;
+}
+
+#skills_topright {
+
+    display: flex;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+
+    top: 0px;
+
+    width: 45%;
+    height: 100%;
+
+}
+
+#skills_toprightinside {
+
+    list-style-type: none;
+
+}
+
+.progressbar {
+
+    position: relative;
+    display: flex;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 13px;
+
+    justify-content: left;
+
+    margin-top: 24px;
+    margin-bottom: 20px;
+
+    width: 170px;
+    height: 15px;
+    list-style: none;
+}
+
+.progressbarfillJava {
+
+    border-radius: 13px;
+    width: 50%;
+    background-color: teal;
+    color: whitesmoke;
+
+}
+
+.progressbarfillJavascript {
+
+    border-radius: 13px;
+    width: 75%;
+    background-color: teal;
+    color: whitesmoke;
+
+}
+
+.progressbarfillassembly {
+
+    border-radius: 13px;
+    width: 40%;
+    background-color: teal;
+    color: whitesmoke;
+
+}
+
+.progressbarfillhtml {
+
+    border-radius: 13px;
+    width: 90%;
+    background-color: teal;
+    color: whitesmoke;
+}
+
+.progressbarfillcss {
+
+    border-radius: 13px;
+    width: 90%;
+    background-color: teal;
+    color: whitesmoke;
+}
+
+#list {
+
+    list-style: none;
+    margin: 17px 0;
+}
+
+.skills_iconsleft {
+
+    display: flex;
+
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+
+    top: 0px;
+    width: 50%;
+    height: 100%;
+
+}
+
+.skills_iconsright {
+
+    display: flex;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+
+    top: 0px;
+    width: 50%;
+    height: 100%;
+
+}
+
+.skills_iconsleft,
+.skills_iconsright {
+
+    display: inline-grid;
+
+}
+
+.skillsimages {
+
+    height: 92px;
+    width: 92px;
+
+}
+
+.skills_iconsinside {
+
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+
+    margin-left: 15%;
+
+}
+
+.skills_iconsinside2 {
+
+    position: relative;
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+    justify-content: right;
+    align-items: center;
+
+    margin-right: 15%;
+
+}
+
+/**/
+/*Contact Title*/
+
+.contactTitle {
+
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 50px;
+    margin-top: 450px;
+
+    /* border: 1px solid;
+	border-color: red; */
+    color: black;
+
+}
+
+#contact_title {
+
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: teal;
+
+    font-size: 20px;
+}
+
+#contact_title::after {
+
+    content: '';
+    border-top: 2px solid;
+    margin: 0 5% 0 5%;
+    flex: 1 0 2%;
+
+    color: whitesmoke;
+
+}
+
+/*Contact Title End*/
+
+/*Contact section of the website*/
+
+.main_contact {
+
+    margin-top: 150px;
+    position: relative;
+
+    margin-right: 15%;
+    margin-left: 15%;
+    margin: 0 auto;
+    max-width: 65%;
+    height: 900px;
+
+    /* border-style: dashed;
+	border-color: red; */
+
+    overflow: auto;
+
+}
+
+.contact_para {
+
+    position: relative;
+    display: flex;
+
+    background-color: whitesmoke;
+
+    border-radius: 60px;
+
+    /* border-style: dashed;
+	border-color: red; */
+
+    margin: 0 auto;
+    margin-top: 50px;
+
+    width: 90%;
+    height: 90px;
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.child {
+
+    margin: 0 auto;
+    display: flex;
+    border: solid;
+
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactimages {
+    display: flex;
+    height: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#gmail {
+    width: 50px;
+    height: 50px;
+}
+
+#resume {
+
+    width: 40%;
+    height: 50%;
+
+    font-size: 16px;
+}
+
+#github {
+
+    width: 50px;
+    height: 50px;
+}
+
+.locationimage {
+
+    margin: 0 auto;
+    margin-top: 50px;
+
+    height: 40%;
+    width: 90%;
+    background-color: teal;
+    border-radius: 60px;
+
+
+}
+
+.locationimageinside {
+
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+    opacity: .7;
+}
+
+/*End*/
+
+#footer {
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
