@@ -221,8 +221,8 @@ nav {
     display: grid;
     grid-template-rows: 3fr 1fr;
 
-    border: 1px solid;
-	border-color: red;
+    /* border: 1px solid;
+	border-color: red; */
 
     background-color: black;
     height: 100vh;
