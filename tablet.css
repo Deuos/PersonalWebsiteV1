@@ -589,16 +589,22 @@ nav {
 #home_movie,
 #home_music {
 
+    width: 300px;
+    text-decoration: none;
     position: relative;
     margin-top: 5%;
 
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
 }
 
 #home_button {
 
     display: flex;
     text-decoration: none;
-    width: 300px;
+    width: 100%;
     height: 40px;
     border-style: solid;
     border-color: teal;
@@ -612,7 +618,6 @@ nav {
     justify-content: center;
     align-items: center;
 
-    margin: 0 auto;
 }
 
 
@@ -635,8 +640,17 @@ nav {
     justify-content: center;
     align-items: center;
 
+
     margin: 0 auto;
 
+}
+
+#home_button:hover,
+#home_button2:hover {
+
+    text-decoration: none;
+	transition: .4s;
+	background-color: teal;
 }
 
 
