@@ -216,10 +216,10 @@ nav {
 /* This is the same as the .type but it has the padding and is about .type-out */
 .container {
 
-    padding: 20% 10px 20% 10px;
+    padding: 19% 10px 19% 10px;
     color: whitesmoke;
     display: grid;
-    grid-template-rows: 300px 100px;
+    grid-template-rows: 3fr 1fr;
 
     /* border: 1px solid;
 	border-color: red; */
