@@ -3,7 +3,9 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px) and (max-width: 3840px)" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 200px) and (max-width: 600px)" href="mobilestyle.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1199px)" href="tablet.css">
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/0930e9dc70.js" crossorigin="anonymous"></script>
@@ -12,6 +14,38 @@
 </head>
 
 <body>
+
+    <div class="nagivationtwo">
+
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="index.html">
+                            <span class="title">Home</span>
+                        </a></li>
+                    <li><a href="index.html#home">
+                            <span class="title">About&nbspMe</span>
+                        </a></li>
+                    <li><a href="index.html#project">
+                            <span class="title">Projects</span>
+                        </a></li>
+                    <li><a href="index.html#skills">
+                            <span class="title">Skills</span>
+                        </a></li>
+                    <li><a href="index.html#Contact">
+                            <span class="title">Contact</span>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+
     <div class="nagivation">
 
         <ul>
@@ -28,19 +62,19 @@
                 </a>
             </li>
             <li>
-                <a href="#index.html#project">
+                <a href="index.html#project">
                     <span class="icons"><i class="fa-solid fa-diagram-project"></i></span>
                     <span class="title">Projects</span>
                 </a>
             </li>
             <li>
-                <a href="#index.html#skills">
+                <a href="index.html#skills">
                     <span class="icons"><i class="fa-solid fa-keyboard"></i></span>
                     <span class="title">Skills</span>
                 </a>
             </li>
             <li>
-                <a href="#index.html#Contact">
+                <a href="index.html#Contact">
                     <span class="icons"><i class="fa-solid fa-envelope"></i></span>
                     <span class="title">Contact</span>
                 </a>
