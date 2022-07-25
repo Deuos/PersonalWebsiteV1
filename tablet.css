@@ -533,7 +533,8 @@ nav {
     text-align: center;
     color: teal;
 
-    font-size: 30px;
+    font-size: 3vw;
+
 
 
 }
@@ -556,12 +557,12 @@ nav {
 
 #home_main {
 
-    font-size: 18px;
+    font-size: 2.2vw;
 
     position: relative;
     display: flex;
 
-    width: 65%;
+    width: 60%;
     height: 450px;
 
 
@@ -576,7 +577,11 @@ nav {
     margin-left: auto;
 
 
-    padding: 10%;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
     border-radius: 50px;
     background-color: whitesmoke;
 }
@@ -601,7 +606,7 @@ nav {
     border-radius: 60px;
 
     background-color: whitesmoke;
-    font-size: 16px;
+    font-size: 2vw;
 
     text-align: center;
     justify-content: center;
@@ -624,7 +629,7 @@ nav {
     border-style: solid;
     color: black;
     background-color: whitesmoke;
-    font-size: 16px;
+    font-size: 2vw;
 
     text-align: center;
     justify-content: center;
@@ -663,7 +668,7 @@ nav {
     text-align: center;
     color: teal;
 
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 #project_title::after {
@@ -699,7 +704,7 @@ nav {
 
 .childrens {
 
-    font-size: 16px;
+    font-size: 2vw;
     display: block;
 
 }
@@ -739,7 +744,7 @@ nav {
     width: 90%;
     height: 80%;
 
-    font-size: 24px;
+    font-size: 2.5vw;
     color: whitesmoke;
 
     border-radius: 45px;
@@ -855,7 +860,7 @@ nav {
     text-align: center;
     color: teal;
 
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 #skills_title::after {
@@ -1083,7 +1088,7 @@ nav {
 
     position: relative;
     display: flex;
-    font-size: 20px;
+    font-size: 2vw;
     text-align: center;
     justify-content: left;
     align-items: center;
@@ -1133,7 +1138,7 @@ nav {
     text-align: center;
     color: teal;
 
-    font-size: 20px;
+    font-size: 3vw;
 }
 
 #contact_title::after {
@@ -1295,7 +1300,7 @@ nav {
     text-align: center;
     color: #008080;
 
-    font-size: 20px;
+    font-size: 3vw;
 }
 
 #playlist_title::after {
