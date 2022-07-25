@@ -196,7 +196,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5vw;
+    font-size: 4.9vw;
     position: relative;
     content: "";
     animation: abomination1 5s linear 1;
@@ -216,13 +216,13 @@ nav {
 /* This is the same as the .type but it has the padding and is about .type-out */
 .container {
 
-    padding: 20% 10px 20% 10px;
+    padding: 19% 10px 19% 10px;
     color: whitesmoke;
     display: grid;
-    grid-template-rows: 300px 100px;
+    grid-template-rows: 3fr 1fr;
 
-    /* border: 1px solid;
-	border-color: red; */
+    border: 1px solid;
+	border-color: red;
 
     background-color: black;
     height: 100vh;
@@ -241,6 +241,19 @@ nav {
     /* border: 5px solid;
 	border-color: whitesmoke;
 	border-radius: 15px; */
+}
+
+@media all and (min-height: 400px) and (min-height: 100px) {
+
+    .scroll_more {
+
+        margin-top: 5%;
+    
+        /* border: 5px solid;
+        border-color: whitesmoke;
+        border-radius: 15px; */
+    }
+
 }
 
 @keyframes showMee {
