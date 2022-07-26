@@ -243,11 +243,17 @@ nav {
 	border-radius: 15px; */
 }
 
-@media all and (min-height: 400px) and (min-height: 100px) {
+@media only screen and (max-height: 400px) and (min-height: 100px) {
+
+    .container {
+
+        padding: 0% 10px 12% 10px;
+
+    }
 
     .scroll_more {
 
-        margin-top: 5%;
+        margin-top: 2%;
     
         /* border: 5px solid;
         border-color: whitesmoke;
@@ -603,7 +609,6 @@ nav {
 #home_music {
 
     width: 300px;
-    text-decoration: none;
     position: relative;
     margin-top: 5%;
 
@@ -616,13 +621,12 @@ nav {
 #home_button {
 
     display: flex;
-    text-decoration: none;
     width: 100%;
     height: 40px;
     border-style: solid;
     border-color: teal;
-    color: black;
     border-radius: 60px;
+    outline: none;
 
     background-color: whitesmoke;
     font-size: 2vw;
@@ -661,7 +665,6 @@ nav {
 #home_button:hover,
 #home_button2:hover {
 
-    text-decoration: none;
 	transition: .4s;
 	background-color: teal;
 }
