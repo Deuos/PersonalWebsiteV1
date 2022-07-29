@@ -254,7 +254,7 @@ nav {
     .scroll_more {
 
         margin-top: 2%;
-    
+
         /* border: 5px solid;
         border-color: whitesmoke;
         border-radius: 15px; */
@@ -576,7 +576,7 @@ nav {
 
 #home_main {
 
-    font-size: 2.2vw;
+    font-size: 2.3vw;
 
     position: relative;
     display: flex;
@@ -665,8 +665,8 @@ nav {
 #home_button:hover,
 #home_button2:hover {
 
-	transition: .4s;
-	background-color: teal;
+    transition: .4s;
+    background-color: teal;
 }
 
 
