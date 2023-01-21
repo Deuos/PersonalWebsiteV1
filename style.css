@@ -988,7 +988,7 @@ body {
 	height: 350px;
 }
 
-#skills_topleft {
+.skills_topleft {
 
 	display: flex;
 
@@ -999,7 +999,24 @@ body {
 
 	font-size: 22px;
 	top: 0px;
+	border: 10px red;
+	width: 350px;
+	height: 350px;
 
+}
+
+.skills_topright {
+
+	display: flex;
+
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	border-radius: 60px;
+
+	font-size: 22px;
+	top: 0px;
+	border: 10px red;
 	width: 350px;
 	height: 350px;
 
@@ -1020,20 +1037,16 @@ body {
 	height: 500px;
 }
 
-#skills_topright {
 
-	display: flex;
 
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	border-radius: 60px;
+.skills_topicons {
 
-	top: 0px;
+	height: 100px;
+	width: 100px;
+}
 
-	width: 350px;
-	height: 350px;
-
+#skills_toptext {
+	
 }
 
 #skills_toprightinside {
@@ -1141,6 +1154,12 @@ body {
 	height: 450px;
 }
 
+.skills_topleft,
+.skills_topright {
+
+	display: inline-grid;
+}
+
 .skills_iconsleft,
 .skills_iconsright {
 
@@ -1172,7 +1191,7 @@ body {
 	display: flex;
 	font-size: 20px;
 	text-align: center;
-	justify-content: right;
+	justify-content: left;
 	align-items: center;
 
 }

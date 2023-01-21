@@ -961,7 +961,7 @@ nav {
     top: 0px;
 
 
-    width: 55%;
+    width: 50%;
     height: 100%;
 
 }
@@ -981,7 +981,7 @@ nav {
     height: 400px;
 }
 
-#skills_topright {
+.skills_topright {
 
     display: flex;
 
@@ -992,7 +992,7 @@ nav {
 
     top: 0px;
 
-    width: 45%;
+    width: 50%;
     height: 100%;
 
 }
@@ -1101,13 +1101,18 @@ nav {
 }
 
 .skills_iconsleft,
-.skills_iconsright {
+.skills_iconsright,
+.skills_topleft,
+.skills_topright {
 
     display: inline-grid;
 
 }
 
-.skillsimages {
+
+
+.skillsimages,
+.skills_topicons {
 
     height: 92px;
     width: 92px;

@@ -913,7 +913,7 @@ nav {
     height: 250px;
 }
 
-#skills_topleft {
+.skills_topleft {
 
     display: flex;
 
@@ -922,11 +922,9 @@ nav {
     justify-content: center;
     border-radius: 60px;
 
-    font-size: 15px;
     top: 0px;
 
-
-    width: 55%;
+    width: 50%;
     height: 100%;
 
 }
@@ -946,7 +944,7 @@ nav {
     height: 400px;
 }
 
-#skills_topright {
+.skills_topright {
 
     display: flex;
 
@@ -957,7 +955,7 @@ nav {
 
     top: 0px;
 
-    width: 45%;
+    width: 50%;
     height: 100%;
 
 }
@@ -1072,12 +1070,19 @@ nav {
 
 }
 
-.skillsimages {
+.skills_topright,
+.skills_topleft {
+    display: inline-grid;
+}
+
+.skillsimages,
+.skills_topicons {
 
     height: 64px;
     width: 64px;
 
 }
+
 
 .skills_iconsinside {
 
